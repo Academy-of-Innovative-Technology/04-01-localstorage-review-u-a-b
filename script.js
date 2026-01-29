@@ -1,9 +1,11 @@
-var key = "";
+var key = "name";
 
 
 // SAVE
 document.querySelector(".save").onclick = function() {
-
+let saveKey = document.querySelector("#saveKey").value;
+let saveValue = document.querySelector("#saveValue").value;
+localStorage.setItem(saveKey, saveValue);
 };
 
 
